@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en" class="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Three Pines Industries — Native American-owned Montana company providing government contracting, apparel printing, and product development services." />
+  <title>Three Pines Industries | Montana-Based Native American–Owned Parent Company</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dist/styles.css" />
+</head>
+
+<body class="min-h-screen antialiased">
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-basalt-900">
+    Skip to content
+  </a>
+
+  <header id="siteHeader" class="fixed inset-x-0 top-0 z-50">
+    <div class="container-shell pt-3">
+      <div class="glass rounded-2xl px-4 sm:px-5 py-3 flex items-center justify-between">
+        <a href="#home" class="group inline-flex items-center gap-3 no-underline">
+          <span class="relative grid place-items-center h-10 w-10 rounded-xl bg-gradient-to-br from-glacier-600 to-pine-600 text-white shadow-soft">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l3 6h-6l3-6Z" fill="currentColor" opacity=".95"/>
+              <path d="M12 7l4 7H8l4-7Z" fill="currentColor" opacity=".85"/>
+              <path d="M12 13l5 9H7l5-9Z" fill="currentColor" opacity=".75"/>
+            </svg>
+          </span>
+          <div class="leading-tight">
+            <div class="font-display font-semibold tracking-tight text-basalt-900 dark:text-basalt-50">
+              Three Pines Industries
+            </div>
+            <div class="text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">
+              Native American–owned • Montana-based
+            </div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6">
+          <a data-nav="about" href="#about" class="no-underline text-sm font-medium text-basalt-600 hover:text-basalt-900 dark:text-basalt-200/80 dark:hover:text-basalt-50 transition">About</a>
+          <a data-nav="divisions" href="#divisions" class="no-underline text-sm font-medium text-basalt-600 hover:text-basalt-900 dark:text-basalt-200/80 dark:hover:text-basalt-50 transition">Divisions</a>
+          <a data-nav="capabilities" href="#capabilities" class="no-underline text-sm font-medium text-basalt-600 hover:text-basalt-900 dark:text-basalt-200/80 dark:hover:text-basalt-50 transition">Capabilities</a>
+          <a data-nav="contact" href="#contact" class="no-underline text-sm font-medium text-basalt-600 hover:text-basalt-900 dark:text-basalt-200/80 dark:hover:text-basalt-50 transition">Contact</a>
+
+          <button id="themeToggle" type="button" aria-pressed="false" class="btn-ghost px-3 py-2" title="Toggle theme">
+            <span class="sr-only">Toggle dark mode</span>
+            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="h-4 w-4 hidden dark:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 14.5A7.5 7.5 0 0 1 9.5 3a6.5 6.5 0 1 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <a href="#contact" class="btn-primary no-underline">
+            Get in touch <span aria-hidden="true">→</span>
+          </a>
+        </nav>
+
+        <div class="md:hidden flex items-center gap-2">
+          <button id="themeToggleMobile" type="button" aria-pressed="false" class="btn-ghost px-3 py-2" title="Toggle theme"
+                  onclick="document.getElementById('themeToggle').click()">
+            <span class="sr-only">Toggle dark mode</span>
+            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="h-4 w-4 hidden dark:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 14.5A7.5 7.5 0 0 1 9.5 3a6.5 6.5 0 1 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button id="navToggle" type="button" class="btn-ghost px-3 py-2" aria-expanded="false" aria-controls="mobileNav">
+            <span class="sr-only">Open menu</span>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="navBackdrop" class="fixed inset-0 z-40 bg-basalt-900/40 backdrop-blur-sm opacity-0 pointer-events-none transition"
+         data-open="false"
+         style="opacity:0"
+    ></div>
+
+    <div id="mobileNav" class="fixed right-0 top-0 z-50 h-full w-[86%] max-w-sm translate-x-full transition transform-gpu"
+         data-open="false"
+         style="transform:translateX(100%)"
+    >
+      <div class="h-full glass rounded-l-3xl p-5 flex flex-col gap-4">
+        <div class="flex items-center justify-between">
+          <div class="font-display font-semibold">Menu</div>
+          <button class="btn-ghost px-3 py-2" onclick="document.getElementById('navToggle').click()">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="grid gap-2">
+          <a class="btn-ghost justify-start no-underline" href="#about">About</a>
+          <a class="btn-ghost justify-start no-underline" href="#divisions">Divisions</a>
+          <a class="btn-ghost justify-start no-underline" href="#capabilities">Capabilities</a>
+          <a class="btn-ghost justify-start no-underline" href="#contact">Contact</a>
+        </nav>
+
+        <div class="mt-auto grid gap-2">
+          <a href="#contact" class="btn-primary no-underline w-full">Request a quote →</a>
+          <p class="text-xs text-basalt-600 dark:text-basalt-200/80">
+            Owned by <span class="font-semibold">Perry Proctor</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const panel = document.getElementById('mobileNav');
+        const backdrop = document.getElementById('navBackdrop');
+        const toggle = document.getElementById('navToggle');
+        if (!panel || !backdrop || !toggle) return;
+
+        const apply = () => {
+          const open = panel.dataset.open === "true";
+          panel.style.transform = open ? "translateX(0)" : "translateX(100%)";
+          backdrop.style.opacity = open ? "1" : "0";
+          backdrop.style.pointerEvents = open ? "auto" : "none";
+        };
+
+        const obs = new MutationObserver(apply);
+        obs.observe(panel, { attributes: true, attributeFilter: ["data-open"] });
+        apply();
+      })();
+    </script>
+  </header>
+
+  <main class="pt-23 md:pt-26">
+    <!-- HERO -->
+    <section id="home" class="relative min-h-[92vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0 -z-20 bg-gradient-to-b from-glacier-50 via-white to-white dark:from-basalt-900 dark:via-basalt-900 dark:to-basalt-900"></div>
+
+      <div class="absolute inset-0 -z-10">
+        <div class="parallax-layer absolute inset-0" data-speed="0.10">
+          <div class="absolute -top-28 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-glacier-400/25 blur-3xl dark:bg-glacier-500/10"></div>
+          <div class="absolute -bottom-32 left-10 h-[460px] w-[460px] rounded-full bg-pine-400/15 blur-3xl dark:bg-pine-500/10"></div>
+        </div>
+
+        <div class="parallax-layer absolute inset-0" data-speed="0.22" aria-hidden="true">
+          <svg class="absolute bottom-0 left-0 w-full h-[56vh] opacity-70 dark:opacity-60" viewBox="0 0 1440 480" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="mtn" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2C5DFF" stop-opacity="0.25"/>
+                <stop offset="1" stop-color="#0E2D22" stop-opacity="0.35"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,330 C200,260 300,380 520,320 C740,260 860,360 1080,300 C1220,262 1330,290 1440,260 L1440,480 L0,480 Z" fill="url(#mtn)"></path>
+            <path d="M0,360 C220,320 320,420 520,360 C740,300 860,410 1080,340 C1220,300 1330,340 1440,310 L1440,480 L0,480 Z" fill="#1E2533" opacity="0.25"></path>
+          </svg>
+        </div>
+
+        <div class="parallax-layer absolute inset-0" data-speed="0.35" aria-hidden="true">
+          <svg class="absolute bottom-0 left-0 w-full h-[52vh] opacity-70 dark:opacity-55" viewBox="0 0 1440 520" preserveAspectRatio="none">
+            <path d="M70 520V420l-22 26h14l-22 26h14l-22 26h60l-22-26h14l-22-26h14l-22-26v100z" fill="#194E3A" opacity=".55"/>
+            <path d="M170 520V390l-28 32h18l-28 32h18l-28 32h76l-28-32h18l-28-32h18l-28-32v130z" fill="#21634A" opacity=".45"/>
+            <path d="M1260 520V390l-28 32h18l-28 32h18l-28 32h76l-28-32h18l-28-32h18l-28-32v130z" fill="#21634A" opacity=".45"/>
+            <path d="M1360 520V420l-22 26h14l-22 26h14l-22 26h60l-22-26h14l-22-26h14l-22-26v100z" fill="#194E3A" opacity=".55"/>
+          </svg>
+        </div>
+
+        <div class="parallax-layer absolute inset-0" data-speed="0.16" aria-hidden="true">
+          <div class="absolute inset-0 opacity-[0.08] dark:opacity-[0.10]"
+               style="background-image:
+                 linear-gradient(90deg, rgba(73,86,107,.7) 1px, transparent 1px),
+                 linear-gradient(0deg, rgba(73,86,107,.7) 1px, transparent 1px);
+                 background-size: 72px 72px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="container-shell relative">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+
+            <h1 class="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight reveal">
+              Three Pines Industries
+              <span class="block text-basalt-600 dark:text-basalt-200/80 text-lg sm:text-xl lg:text-2xl font-sans font-medium mt-3">
+                Apparel, branding, and procurement services for government and commercial clients.
+              </span>
+            </h1>
+
+            <p class="mt-5 lead max-w-2xl reveal">
+              Native American-owned Montana company providing apparel programs, branded merchandise, and reliable fulfillment.
+              <span class="font-semibold text-basalt-900 dark:text-basalt-50">Owned by Perry Proctor.</span>
+            </p>
+
+            <div class="mt-7 flex flex-col sm:flex-row gap-3 reveal">
+              <a href="#divisions" class="btn-primary no-underline">
+                Our divisions <span aria-hidden="true">→</span>
+              </a>
+              <a href="#contact" class="btn-ghost no-underline">Contact us</a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 reveal">
+            <div class="gradient-border">
+              <div class="card">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <div class="text-sm font-semibold text-basalt-700 dark:text-basalt-200/90">Trusted partner for</div>
+                    <div class="mt-2 font-display text-xl font-semibold tracking-tight">
+                      Agencies. Enterprises. Communities.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-5 grid gap-3">
+                  <div class="relative overflow-hidden rounded-xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 px-4 py-3">
+                    <div class="text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">Divisions</div>
+                    <div class="mt-1 text-sm font-semibold">Government Contracting • Three Pines Printing (DBA) • Product Development</div>
+                    <div class="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white/0 via-white/45 to-white/0 opacity-40 animate-shimmer dark:via-basalt-50/10"></div>
+                  </div>
+
+                  <div class="relative overflow-hidden rounded-xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 px-4 py-3">
+                    <div class="text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">What we deliver</div>
+                    <div class="mt-1 text-sm font-semibold">Uniform programs • Branded merchandise • Promotional products</div>
+                    <div class="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white/0 via-white/45 to-white/0 opacity-40 animate-shimmer dark:via-basalt-50/10"></div>
+                  </div>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between">
+                  <a href="#about" class="btn-secondary no-underline px-4 py-2">Explore <span aria-hidden="true">↓</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 flex justify-center">
+              <div class="inline-flex items-center gap-2 text-xs text-basalt-600 dark:text-basalt-200/80">
+                <span class="h-5 w-5 rounded-full border border-basalt-200/70 dark:border-basalt-700/60 grid place-items-center">
+                  <span class="h-1.5 w-1.5 rounded-full bg-basalt-600 dark:bg-basalt-200 animate-bounce"></span>
+                </span>
+                Scroll
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+<section id="about" class="section section-ambient">
+      <div class="container-shell">
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-6 reveal">
+            <div class="kicker">About</div>
+            <h2 class="h2 mt-4">A corporate partner grounded in Montana.</h2>
+            <p class="lead mt-4">
+              <span class="font-semibold text-basalt-900 dark:text-basalt-50">Three Pines Industries is a Native American–owned Montana company</span>
+              built to support procurement needs across public and private sectors—without sacrificing quality, clarity, or accountability.
+              <span class="font-semibold text-basalt-900 dark:text-basalt-50">Owned by Perry Proctor.</span>
+            </p>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="card card-hover">
+                <div class="text-sm font-semibold">Mission</div>
+                <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                  Deliver dependable apparel, branding, and procurement solutions with disciplined project management.
+                </p>
+              </div>
+              <div class="card card-hover">
+                <div class="text-sm font-semibold">Values</div>
+                <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                  Integrity, responsiveness, and respect—serving agencies, organizations, and communities with care.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 reveal">
+            <div class="gradient-border">
+              <div class="card">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-sm font-semibold text-basalt-700 dark:text-basalt-200/90">At a glance</div>
+                    <div class="mt-2 text-lg font-display font-semibold tracking-tight">Capability built for scale.</div>
+                  </div>
+                  <span class="badge">Government & commercial</span>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div class="rounded-2xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4">
+                    <div class="text-3xl font-display font-semibold tracking-tight text-glacier-700 dark:text-glacier-300 animate-fade-in">∞</div>
+                    <div class="mt-1 text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">Procurement-ready support</div>
+                  </div>
+                  <div class="rounded-2xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4">
+                    <div class="text-3xl font-display font-semibold tracking-tight text-pine-700 dark:text-pine-200 animate-fade-in">3</div>
+                    <div class="mt-1 text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">Core divisions</div>
+                  </div>
+                  <div class="rounded-2xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4">
+                    <div class="text-3xl font-display font-semibold tracking-tight text-earth-600 dark:text-earth-200 animate-fade-in">✓</div>
+                    <div class="mt-1 text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">Quality-first execution</div>
+                  </div>
+                </div>
+
+                <div class="mt-6 rounded-2xl border border-basalt-200/60 dark:border-basalt-700/60 bg-gradient-to-r from-glacier-600/10 via-pine-600/10 to-earth-500/10 p-5">
+                  <p class="text-sm text-basalt-700 dark:text-basalt-200/90">
+                    We serve <span class="font-semibold">government agencies, corporations, schools, teams, and nonprofit organizations</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISIONS -->
+    <section id="divisions" class="section bg-basalt-50/70 dark:bg-basalt-800/30">
+      <div class="container-shell">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 reveal">
+          <div>
+            <div class="kicker">Divisions</div>
+            <h2 class="h2 mt-4">Three focused lines of business—one accountable partner.</h2>
+            <p class="lead mt-3 max-w-3xl">
+              Our divisions include <span class="font-semibold">government contracting</span> and commercial screen printing under the
+              <span class="font-semibold">Three Pines Printing (DBA)</span>—plus product development for specialized programs.
+            </p>
+          </div>
+          <a href="#capabilities" class="btn-primary no-underline w-fit">See capabilities →</a>
+        </div>
+
+        <div class="mt-10 grid gap-5 lg:grid-cols-3">
+          <article class="card card-hover reveal">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold tracking-tight">Government Contracting Division</h3>
+                <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                  Procurement-aligned apparel and branded merchandise programs with fulfillment support.
+                </p>
+              </div>
+              <span class="badge">Priority procurement</span>
+            </div>
+
+            <div class="mt-4 rounded-xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4">
+              <div class="text-xs font-semibold text-basalt-600 dark:text-basalt-200/80 mb-2">
+                Native American-owned, qualified for priority procurement
+              </div>
+              <ul class="grid gap-2 text-sm">
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Uniforms and agency apparel programs</span></li>
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Branded merchandise + promotional products</span></li>
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Promotional products</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-4 text-xs text-basalt-600 dark:text-basalt-200/80">
+              Sectors served: <span class="font-semibold">federal, state, municipal, tribal</span>
+            </div>
+          </article>
+
+          <article class="card card-hover reveal">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold tracking-tight">
+                  Three Pines Printing <span class="text-sm font-sans font-semibold text-basalt-600 dark:text-basalt-200/80">(DBA)</span>
+                </h3>
+                <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                  Commercial apparel decoration and promotional products delivered with enterprise-grade consistency.
+                </p>
+              </div>
+              <span class="badge">Commercial</span>
+            </div>
+
+            <div class="mt-4 rounded-xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4 overflow-hidden">
+              <div class="text-xs font-semibold text-basalt-600 dark:text-basalt-200/80">Apparel decoration</div>
+              <div class="mt-3 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-xl bg-glacier-600/15 grid place-items-center animate-float">
+                  <span class="text-sm font-semibold text-glacier-700 dark:text-glacier-300">SP</span>
+                </div>
+                <div class="h-10 w-10 rounded-xl bg-pine-600/15 grid place-items-center animate-float" style="animation-delay: .6s;">
+                  <span class="text-sm font-semibold text-pine-800 dark:text-pine-200">EM</span>
+                </div>
+                <div class="h-10 w-10 rounded-xl bg-earth-500/15 grid place-items-center animate-float" style="animation-delay: 1.2s;">
+                  <span class="text-sm font-semibold text-earth-700 dark:text-earth-200">PX</span>
+                </div>
+              </div>
+
+              <ul class="mt-4 grid gap-2 text-sm">
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Screen printing • Embroidery • Leather patches</span></li>
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Promotional products + design support</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-4 text-xs text-basalt-600 dark:text-basalt-200/80">
+              Target clients: <span class="font-semibold">corporations, schools, nonprofits, churches, teams</span>
+            </div>
+          </article>
+
+          <article class="card card-hover reveal">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-display text-xl font-semibold tracking-tight">Product Development Division</h3>
+                <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                  Optional/tertiary support for apparel line creation and tourism-forward product programs.
+                </p>
+              </div>
+              <span class="badge">Programs</span>
+            </div>
+
+            <div class="mt-4 rounded-xl border border-basalt-200/60 dark:border-basalt-700/60 bg-white/60 dark:bg-basalt-800/40 p-4">
+              <ul class="grid gap-2 text-sm">
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Apparel line creation</span></li>
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Souvenir and tourism products</span></li>
+                <li class="flex items-start gap-2"><span class="check" aria-hidden="true">✓</span><span>Wholesale programs</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-4 text-xs text-basalt-600 dark:text-basalt-200/80">
+              Ideal for organizations needing <span class="font-semibold">repeatable product pipelines</span>.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+<section id="capabilities" class="section section-ambient">
+    <div class="ambient-grid" aria-hidden="true"></div>
+      <div class="container-shell">
+        <div class="reveal">
+          <div class="kicker">Capabilities</div>
+          <h2 class="h2 mt-4">Clear service lines, smooth delivery.</h2>
+          <p class="lead mt-3 max-w-3xl">
+            Switch between capability areas below. Each category is designed for predictable outcomes—especially in government and multi-site environments.
+          </p>
+        </div>
+
+        <div class="mt-8 grid lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-5 reveal">
+            <div class="card">
+              <div id="capTablist" role="tablist" aria-label="Capabilities categories" class="flex flex-wrap gap-2">
+                <button class="tab" role="tab" id="tab-gov" aria-selected="true" aria-controls="panel-gov" tabindex="0">Government Contracting</button>
+                <button class="tab" role="tab" id="tab-print" aria-selected="false" aria-controls="panel-print" tabindex="-1">Commercial Printing</button>
+                <button class="tab" role="tab" id="tab-prod" aria-selected="false" aria-controls="panel-prod" tabindex="-1">Product Development</button>
+              </div>
+
+              <div class="mt-6 text-sm text-basalt-600 dark:text-basalt-200/80">
+                Built for program clarity: structured scope, reliable timelines, and consistent quality checks.
+              </div>
+
+              <div class="mt-6 rounded-2xl border border-basalt-200/60 dark:border-basalt-700/60 p-4 bg-gradient-to-r from-glacier-600/10 via-pine-600/10 to-earth-500/10">
+                <div class="text-xs font-semibold text-basalt-700 dark:text-basalt-200/90">Brand messaging</div>
+                <p class="mt-2 text-sm">
+                  Native American-owned Montana company • Owned by Perry Proctor • Serving agencies, corporations, schools, teams, and nonprofits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 reveal">
+            <div class="gradient-border">
+              <div class="card">
+                <div id="panel-gov" role="tabpanel" aria-labelledby="tab-gov" class="transition opacity-100 translate-y-0">
+                  <h3 class="font-display text-xl font-semibold tracking-tight">Government Contracting</h3>
+                  <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                    Uniform programs, branded merchandise, and promotional products—supported by bulk fulfillment and distribution.
+                  </p>
+                  <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Uniforms and agency apparel</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Merchandise programs</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Promotional products</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Fulfillment, distribution</li>
+                  </ul>
+                </div>
+
+                <div id="panel-print" role="tabpanel" aria-labelledby="tab-print" class="transition opacity-0 translate-y-2" hidden>
+                  <h3 class="font-display text-xl font-semibold tracking-tight">Commercial Printing (Three Pines Printing DBA)</h3>
+                  <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                    Professional decoration with consistent output—ideal for corporate identity, school spiritwear, and organizational programs.
+                  </p>
+                  <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Screen printing</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Embroidery</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Patches</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Promotional items</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Design support</li>
+                  </ul>
+                </div>
+
+                <div id="panel-prod" role="tabpanel" aria-labelledby="tab-prod" class="transition opacity-0 translate-y-2" hidden>
+                  <h3 class="font-display text-xl font-semibold tracking-tight">Product Development</h3>
+                  <p class="mt-2 text-sm text-basalt-600 dark:text-basalt-200/80">
+                    Build repeatable product lines and wholesale-ready programs—especially for tourism and souvenir markets.
+                  </p>
+                  <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Apparel lines</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Souvenirs</li>
+                    <li class="flex gap-2"><span class="check" aria-hidden="true">✓</span>Wholesale programs</li>
+                  </ul>
+                </div>
+
+                <div class="mt-7 pt-6 border-t border-basalt-200/60 dark:border-basalt-700/60 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+                  <p class="text-xs text-basalt-600 dark:text-basalt-200/80">
+                    Want a tailored capabilities statement? We can align services to your purchasing process.
+                  </p>
+                  <a href="#contact" class="btn-primary no-underline">Contact us →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- CONTACT (NEW PREMIUM DESIGN — INFO ONLY, NO FORM) -->
+<section id="contact" class="section relative overflow-hidden">
+  <!-- Ambient background like hero -->
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-glacier-50 via-white to-white dark:from-basalt-900 dark:via-basalt-900 dark:to-basalt-900"></div>
+
+  <!-- soft orbs + grid -->
+  <div class="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-24 left-10 h-[420px] w-[420px] rounded-full bg-glacier-400/20 blur-3xl dark:bg-glacier-500/10"></div>
+    <div class="absolute -bottom-28 right-12 h-[460px] w-[460px] rounded-full bg-pine-400/18 blur-3xl dark:bg-pine-500/10"></div>
+
+    <div class="absolute inset-0 opacity-[0.06] dark:opacity-[0.10]"
+         style="background-image:
+           linear-gradient(90deg, rgba(73,86,107,.7) 1px, transparent 1px),
+           linear-gradient(0deg, rgba(73,86,107,.7) 1px, transparent 1px);
+           background-size: 72px 72px;">
+    </div>
+  </div>
+
+  <div class="container-shell">
+    <div class="reveal">
+      <div class="kicker">Contact</div>
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+        <div>
+          <h2 class="h2 mt-4">Let’s scope your program.</h2>
+          <p class="lead mt-3 max-w-3xl">
+            We support government agencies, corporations, schools, teams, and nonprofit organizations with consistent delivery and clear communication.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main contact panel -->
+    <div class="mt-10 reveal">
+      <div class="gradient-border">
+        <div class="card overflow-hidden">
+          <!-- Info rows -->
+          <div class="mt-1 grid grid-cols-1 lg:grid-cols-3
+                      divide-y lg:divide-y-0 lg:divide-x
+                      divide-basalt-200/60 dark:divide-basalt-700/60">
+            <!-- Address -->
+            <div class="p-6">
+              <div class="flex items-start gap-4">
+                <span class="relative inline-flex h-11 w-11 flex-none items-center justify-center rounded-2xl
+                             bg-pine-600/15 text-pine-800 dark:text-pine-200 border border-pine-600/20">
+                  <span class="absolute inset-0 rounded-2xl bg-pine-500/10 animate-pulse"></span>
+                  <svg class="relative h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+
+                <div class="min-w-0">
+                  <div class="text-sm font-semibold">Address</div>
+                  <p class="mt-1 text-sm text-basalt-700 dark:text-basalt-200/90">
+                    Montana-based Headquarters
+                  </p>
+                  <p class="mt-2 text-xs text-basalt-600 dark:text-basalt-200/80">
+                    Serving statewide and beyond.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="p-6">
+              <div class="flex items-start gap-4">
+                <span class="inline-flex h-11 w-11 flex-none items-center justify-center rounded-2xl
+                             bg-glacier-600/15 text-glacier-700 dark:text-glacier-300 border border-glacier-500/20">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 4h8v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V4Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 9v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+
+                <div class="min-w-0 flex-1">
+                  <div class="text-sm font-semibold">Phone</div>
+                  <div class="mt-1 flex items-center gap-2">
+                    <a href="tel:+14065550123"
+                       class="text-sm font-semibold text-basalt-900 dark:text-basalt-50 no-underline hover:underline">
+                      (406) 555-0123
+                    </a>
+                  </div>
+                  <p class="mt-2 text-xs text-basalt-600 dark:text-basalt-200/80">
+                    Call us directly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="p-6">
+              <div class="flex items-start gap-4">
+                <span class="inline-flex h-11 w-11 flex-none items-center justify-center rounded-2xl
+                             bg-earth-500/15 text-earth-700 dark:text-earth-200 border border-earth-500/20">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M5.5 7l6.5 5 6.5-5" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+
+                <div class="min-w-0 flex-1">
+                  <div class="text-sm font-semibold">Email</div>
+                  <div class="mt-1 flex items-start gap-2 min-w-0">
+                    <a href="mailto:info@threepinesindustries.com"
+                       class="text-sm font-semibold text-basalt-900 dark:text-basalt-50 no-underline hover:underline
+                              break-words [overflow-wrap:anywhere]">
+                      info@threepinesindustries.com
+                    </a>
+                  </div>
+                  <p class="mt-2 text-xs text-basalt-600 dark:text-basalt-200/80">
+                    Send us an email.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="relative py-10 overflow-hidden">
+    <!-- Footer background layers (NOT parallax-layer) -->
+    <div class="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
+        <!-- subtle ambient wash -->
+        <div class="absolute inset-0 bg-gradient-to-b from-white via-basalt-50/60 to-white dark:from-basalt-900 dark:via-basalt-900 dark:to-basalt-900"></div>
+
+        <!-- trees band -->
+        <svg class="absolute bottom-0 left-0 w-full h-56 opacity-70 dark:opacity-55"
+            viewBox="0 0 1440 520" preserveAspectRatio="none">
+        <path d="M70 520V420l-22 26h14l-22 26h14l-22 26h60l-22-26h14l-22-26h14l-22-26v100z"
+                fill="#194E3A" opacity=".55"/>
+        <path d="M170 520V390l-28 32h18l-28 32h18l-28 32h76l-28-32h18l-28-32h18l-28-32v130z"
+                fill="#21634A" opacity=".45"/>
+        <path d="M1260 520V390l-28 32h18l-28 32h18l-28 32h76l-28-32h18l-28-32h18l-28-32v130z"
+                fill="#21634A" opacity=".45"/>
+        <path d="M1360 520V420l-22 26h14l-22 26h14l-22 26h60l-22-26h14l-22-26h14l-22-26v100z"
+                fill="#194E3A" opacity=".55"/>
+        </svg>
+    </div>
+
+    <!-- Your existing footer content -->
+    <div class="container-shell relative z-10">
+        <div class="glass rounded-2xl p-6 sm:p-7">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+            <div class="font-display font-semibold tracking-tight text-lg">Three Pines Industries</div>
+            <div class="mt-1 text-sm text-basalt-600 dark:text-basalt-200/80">
+                Native American-owned Montana company
+            </div>
+            </div>
+
+            <nav class="flex flex-wrap gap-3 text-sm">
+            <a class="btn-ghost no-underline px-3 py-2" href="#about">About</a>
+            <a class="btn-ghost no-underline px-3 py-2" href="#divisions">Divisions</a>
+            <a class="btn-ghost no-underline px-3 py-2" href="#capabilities">Capabilities</a>
+            <a class="btn-ghost no-underline px-3 py-2" href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-basalt-200/60 dark:border-basalt-700/60 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <p class="text-xs text-basalt-600 dark:text-basalt-200/80">
+            © <span id="year"></span> Three Pines Industries. All rights reserved.
+            </p>
+            <div class="flex items-center gap-2 text-xs text-basalt-600 dark:text-basalt-200/80">
+            <span class="h-2 w-2 rounded-full bg-glacier-600"></span>
+            <span class="h-2 w-2 rounded-full bg-pine-600"></span>
+            <span class="h-2 w-2 rounded-full bg-earth-500"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+  </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./src/app.js" defer></script>
+</body>
+</html>
